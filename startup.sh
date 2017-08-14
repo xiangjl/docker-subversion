@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ ! -f /subversion/config/vhost.conf ]; then
+if [ ! -f /subversion/config/subversion.conf ]; then
     cp /docker/subversion.conf /subversion/config/subversion.conf
     cp /docker/authz.conf /subversion/config/authz.conf
     htpasswd -bc /subversion/config/passwd.conf svn password
